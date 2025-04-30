@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr Earning - Rain BNB Business</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.content {
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: #ffcc00;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #ffdb4d;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+ul {
+  list-style: disc;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/tXkU6SS.jpeg" alt="Mr Earning Profile Picture">
+    <h1>Online Business - Rain BNB With Zaib</h1>
+  </header>  <div class="content page active" id="page1">
+    <p>Welcome to Mr Earning's Rain BNB Business. Discover how to earn passive income with our powerful network system. Click next to explore the complete plan.</p>
+    <button class="button" onclick="nextPage()">Next Page</button>
+  </div>  <div class="content page" id="page2">
+    <h2>Rain BNB Business Plan</h2>
+    <p>Rain BNB is a smart contract-based crypto earning system. It uses Binance Smart Chain (BNB) to create a sustainable and passive income model. You can earn by referring others and growing your team.</p>
+    <p>Features:</p>
+    <ul>
+      <li>100% Decentralized</li>
+      <li>Instant Withdrawals</li>
+      <li>Transparent Smart Contract</li>
+      <li>Earn BNB Daily</li>
+    </ul>
+    <a href="#" class="button" onclick="agreeAction()">Yes, I Agree for this Business</a>
+  </div>  <div class="content page" id="page3">
+    <h2>Contact Zaib on WhatsApp</h2>
+    <p>To get started and join our team, click below to chat with Zaib directly on WhatsApp.</p>
+    <a href="https://wa.me/923301345700" class="button">Message Zaib on WhatsApp</a>
+  </div>  <script>
+    let currentPage = 1;
+    function nextPage() {
+      document.getElementById(`page${currentPage}`).classList.remove('active');
+      currentPage++;
+      document.getElementById(`page${currentPage}`).classList.add('active');
+    }
+    function agreeAction() {
+      document.getElementById('page2').classList.remove('active');
+      document.getElementById('page3').classList.add('active');
+    }
+  </script></body>
+</html>
